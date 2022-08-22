@@ -32,6 +32,7 @@ function App() {
       <div className="App">
         <BrowserRouter>
           <Routes>
+            <Route path="/" element={<Firstpage />} />
             <Route path="/main" element={
               <Main 
                 token={token}
