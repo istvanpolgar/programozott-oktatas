@@ -19,7 +19,7 @@ export default function Main(props) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: 1,
+        width: 0.95,
         p: 1
       }}>
           <Stepper  
