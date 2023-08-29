@@ -7,6 +7,7 @@ import SignUp from './components/SignUp';
 import ForgottenPass from './components/ForgottenPass';
 import Main from './components/Main';
 import Firstpage from './components/Firstpage';
+import Workspace from './components/Workspace';
 
 function App() {
   const {token, setToken} = useToken();
@@ -35,6 +36,11 @@ function App() {
             <Route path="/" element={<Firstpage />} />
             <Route path="/main" element={
               <Main 
+                token={token}
+                setToken={setToken}
+              />} /> 
+            <Route path="/work" element={
+              <Workspace
                 token={token}
                 setToken={setToken}
               />} /> 

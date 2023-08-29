@@ -64,7 +64,7 @@ export default function SignIn(props) {
       'Authorization': `Bearer ${props.token}`
     }
 
-    axios.post(process.env.REACT_APP_API_URL + '/signin', data, { headers: headers })
+    axios.post(`${process.env.REACT_APP_API_URL}/signin`, data, { headers: headers })
     .then((response) => {
       if(response.data.code){
         setMessage(response.data.message);

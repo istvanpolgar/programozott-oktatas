@@ -72,7 +72,7 @@ export default function SignUp() {
       'Content-Type': 'application/json',
     }
 
-    axios.post(process.env.REACT_APP_API_URL + '/signup', data, { headers: headers })
+    axios.post(`${process.env.REACT_APP_API_URL}/signup`, data, { headers: headers })
     .then((response) => {
       if(response.data.code){
         setMessage(response.data.message);
