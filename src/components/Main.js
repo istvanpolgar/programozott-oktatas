@@ -103,7 +103,7 @@ export default function Main(props) {
                   Nézd át, hogy mit dolgoztál eddig
                 </Text1>
                 <Text2 variant="body2" color="text.secondary">
-                  Itt találod meg, hogy az eddigi munkád kimutatását és a fontosabb statiszikai adatokat
+                  Nézd meg, hogy hol tartassz a gyakorlás folyamatában, mennyit gyakoroltál, illetve miket teljesítettél és mely részek várnak még rád
                 </Text2>
               </CardContent>
             </CardActionArea>
@@ -139,7 +139,7 @@ export default function Main(props) {
                   Tanulj
                 </Text1>
                 <Text2 variant="body2" color="text.secondary">
-                  Olvasd el a feladatokhoz tartozó leckéket és nézd meg ahozzájuk tartozó videókat, interaktív weboldalakat 
+                  Merülj el a feladatokhoz tartozó elméleti tartalmakban, nézd meg a hozzájuk tartozó videókat, interaktív weboldalakat 
                 </Text2>
               </CardContent>
             </CardActionArea>

@@ -8,6 +8,8 @@ import ForgottenPass from './components/ForgottenPass';
 import Main from './components/Main';
 import Firstpage from './components/Firstpage';
 import Workspace from './components/Workspace';
+import Learn from './components/Learn';
+import Stats from './components/Stats';
 
 function App() {
   const {token, setToken} = useToken();
@@ -41,6 +43,16 @@ function App() {
               />} /> 
             <Route path="/work" element={
               <Workspace
+                token={token}
+                setToken={setToken}
+              />} /> 
+            <Route path="/read" element={
+              <Learn
+                token={token}
+                setToken={setToken}
+              />} /> 
+            <Route path="/stats" element={
+              <Stats
                 token={token}
                 setToken={setToken}
               />} /> 
