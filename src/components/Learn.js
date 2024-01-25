@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { styled } from '@mui/material/styles';
-import ReactPlayer from 'react-player';
+import YoutubeVideo from './YoutubeVideo';
 import {
-  Box,
-  Container
+  Box
 } from '@mui/material';
 
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
@@ -172,13 +171,9 @@ export default function Learn(props) {
                                                     <AccordionDetails>
                                                     <div> {
                                                         tit.url ?
-                                                        tit.url.split(',').map( (u,j) => {
+                                                        tit.url.split(',').map( (u) => {
                                                             return (
-                                                                <Container key={j} maxWidth="md">
-                                                                    <div className='playerDiv'>
-                                                                        <ReactPlayer width='100%' controls={true} url={u}/>
-                                                                    </div>
-                                                                </Container>
+                                                                <YoutubeVideo embedId= {u}/>
                                                             )
                                                         }) : null
                                                     } </div>

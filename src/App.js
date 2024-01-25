@@ -10,6 +10,7 @@ import Firstpage from './components/Firstpage';
 import Workspace from './components/Workspace';
 import Learn from './components/Learn';
 import Stats from './components/Stats';
+import Admin from './components/Admin'
 
 function App() {
   const {token, setToken} = useToken();
@@ -25,6 +26,7 @@ function App() {
                 setToken={setToken}
             />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/admin" element={<Admin />} />
             <Route path="/forgotten_pass" element={<ForgottenPass />} />
           </Routes>
         </BrowserRouter>

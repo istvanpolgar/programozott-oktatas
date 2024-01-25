@@ -91,12 +91,8 @@ export default function InfoArea(props) {
             if(!response.data.code){
                 setUser(response.data.user);
             }
-            else
-            {
-                console.log(response.data.message);
-            }
         });
-    },[props.token]);
+    },[]);
 
     return (
         <div>
