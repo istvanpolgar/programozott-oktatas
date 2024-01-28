@@ -63,7 +63,7 @@ export default function SignIn(props) {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${props.token}`
     }
-
+    console.log(process.env.REACT_APP_API_URL)
     axios.post(`${process.env.REACT_APP_API_URL}/signin`, data, { headers: headers })
     .then((response) => {
       if(response.data.code){
